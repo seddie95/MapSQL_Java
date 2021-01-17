@@ -1,0 +1,15 @@
+CREATE TABLE contacts(id INT AUTO_INCREMENT, name CHAR(30) NOT NULL, email CHAR(30));
+INSERT INTO contacts(name, email) VALUES('Rem', 'Rem.collier@ucd.ie');
+INSERT INTO contacts(name, email) VALUES('ham', 'collier@ucd.ie');
+INSERT INTO contacts(name, email) VALUES('Re', 'Rem@ucd.ie');
+SELECT * FROM contacts;
+/*INSERT INTO contacts(email) VALUES('collier@ucd.ie');*/
+SELECT * FROM contacts WHERE name LIKE "%m%";
+UPDATE contacts SET name = 'Rob' WHERE email LIKE "%Rem";
+SELECT * FROM contacts;
+DELETE FROM contacts where name = "Rob";
+SELECT * FROM contacts;
+DROP TABLE contacts;
+/*SELECT * FROM contacts;*/
+SELECT * FROM mapsql.tables;
+

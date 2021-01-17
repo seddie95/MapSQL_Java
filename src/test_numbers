@@ -1,0 +1,41 @@
+CREATE TABLE contacts(id INT AUTO_INCREMENT, name CHAR(30) NOT NULL, email CHAR(30));
+
+INSERT INTO contacts(name, email) VALUES('Rem', 'Rem.collier@ucd.ie');
+INSERT INTO contacts(name, email) VALUES('ham', 'collier@ucd.ie');
+INSERT INTO contacts(name, email) VALUES('Re', 'Rem@ucd.ie');
+INSERT INTO contacts(name, email) VALUES('em', 'Reier@ucd.ie');
+INSERT INTO contacts(name, email) VALUES('Rm', 'Rellier@ucd.ie');
+INSERT INTO contacts(name, email) VALUES('Rum', 'Remllier@ucd.ie');
+INSERT INTO contacts(name, email) VALUES('mum', 'Remllier@ucd.ie');
+INSERT INTO contacts(name, email) VALUES('Emma', 'Remllier@ucd.ie');
+
+
+SELECT * FROM contacts WHERE id > 2;
+SELECT * FROM contacts WHERE id <= 2;
+SELECT * FROM contacts WHERE id < 2;
+SELECT * FROM contacts WHERE id >= 2;
+
+SELECT * FROM contacts WHERE name LIKE "%Rem";
+SELECT * FROM contacts WHERE name LIKE "%m%";
+SELECT * FROM contacts WHERE name LIKE "m%";
+
+#DELETE from contacts where name="Emma";
+
+
+INSERT INTO contacts(email) VALUES('collier@ucd.ie');
+
+
+CREATE TABLE contacts(id INT AUTO_INCREMENT, name CHAR(30) NOT NULL, email CHAR(30),phone  INT NOT NULL);
+
+
+UPDATE contacts SET name = 'Rob' WHERE email LIKE "%Rem";
+
+
+DROP TABLE contacts;
+
+
+
+
+#SELECT * FROM mapsql.tables;
+
+UPDATE contacts SET name = 'Rob' WHERE id >1;
